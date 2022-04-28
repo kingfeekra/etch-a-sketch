@@ -19,12 +19,16 @@ for (let i = 0; i < 16; i++) {
 }// grid has now been created
 
 
-const divBoxList = document.querySelectorAll(".divBox");
+//sketch functionality, box changes to blue when mouse hovers over
+const divBoxList = document.querySelectorAll(".divBox"); 
 for (let i = 0; i < divBoxList.length; i++) {
 divBoxList[i].addEventListener("mouseover", () => {
-    divBoxList[i].style.cssText = "background-color:blue;";
+    divBoxList[i].style.cssText = `background-color: rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
     
 });
 }
 
-
+function randomNumber() {
+    console.log(Math.floor(Math.random()*255));
+   return Math.floor(Math.random()*255);
+}
