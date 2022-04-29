@@ -1,12 +1,20 @@
 body {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#resetButton {
+    height: 40px;
+    margin: 20px;
 }
 
 #container {
     display:flex;
     flex-direction: column;
+    height: 640px;
+    width: 640px;
 }
 
 .divRow {
@@ -14,7 +22,6 @@ body {
 }
 
 .divBox {
-    height: 30px;
-    width: 30px;
+    
     border: 1px solid black;
 }
